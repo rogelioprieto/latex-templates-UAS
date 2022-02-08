@@ -11,7 +11,7 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 ## template02-tarea-preguntas-codigo
 ![page01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/template02-tarea-preguntas-codigo/ejemplo/tarea06-pagina01.png)
 
-![page02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/template03-tarea-preguntas-codigo/ejemplo/tarea06-pagina02.png)
+![page02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/template02-tarea-preguntas-codigo/ejemplo/tarea06-pagina02.png)
 
 
 

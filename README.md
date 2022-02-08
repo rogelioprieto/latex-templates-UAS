@@ -11,15 +11,15 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 
 ## Listado de templates:
 
-1. plantilla01-tarea-preguntas
+### plantilla01-tarea-preguntas
 
 Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque para consejos o información adicional y bibliografía.
 
-2. plantilla02-tarea-preguntas-codigo
+### plantilla02-tarea-preguntas-codigo
 
 Contiene los mismo que la plantilla anterior, agrega bloques para mostrar código en cualquier lenguaje de programación que permite el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.
 
-3. plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores
+### plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores
 
 ⚠️⚠️-Aún en construcción-⚠️⚠️
 

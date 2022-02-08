@@ -15,6 +15,11 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 
 Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque para consejos o información adicional y bibliografía.
 
+
+![página01](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-1-small.png)
+
+![página02](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-2-small.png)
+
 ### plantilla02-tarea-preguntas-codigo
 
 Contiene los mismo que la plantilla anterior, agrega bloques para mostrar código en cualquier lenguaje de programación que permite el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.

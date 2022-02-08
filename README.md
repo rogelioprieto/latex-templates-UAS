@@ -21,15 +21,14 @@ Contiene los mismo que la plantilla anterior, agrega bloques para mostrar códig
 
 ### plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores
 
-⚠️⚠️-Aún en construcción-⚠️⚠️
+⚠️⚠️*-Aún en construcción-*⚠️⚠️
 
-Contiene los mismo que la plantilla anterior, agrega bloques para mostrar código en cualquier lenguaje de programación que permite el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.
-
-
-3. plantilla
+Similar a la plantilla anterior, ésta agrega bloques para mostrar código en cualquier lenguaje de programación que permita el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.
 
 
-## template01-tarea-preguntas
+
+
+## plantilla01-tarea-preguntas
 
 Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque para consejos o información adicional y bibliografía.
 
@@ -40,7 +39,7 @@ Página 2\
 ![page02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla01-tarea-preguntas/ejemplo/tarea06-pagina-02.png)
 
 
-## template02-tarea-preguntas-codigo
+## plantilla02-tarea-preguntas-codigo
 Página 1\
 ![page01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla01-tarea-preguntas/ejemplo/tarea06-pagina01.png)
 

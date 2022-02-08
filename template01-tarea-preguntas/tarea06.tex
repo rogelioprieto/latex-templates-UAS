@@ -157,130 +157,6 @@
 
 
 
-%--------------------------------------
-%listings and colors package settings
-%--------------------------------------
-\makeatletter
-%\usepackage{color} %this line is not necessary; in beamer xcolor package is loaded by default!
-%\definecolor{lightgray}{rgb}{0.95, 0.95, 0.95}
-%\definecolor{darkgray}{rgb}{0.4, 0.4, 0.4}
-%\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
-%\definecolor{editorGray}{rgb}{0.95, 0.95, 0.95}
-%\definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
-%\definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
-%\usepackage{upquote}
-\usepackage{listings}
-%\usepackage{listingsutf8}
-
-
-%define algoritmia language
-\lstdefinelanguage{algoritmialanguage}{
-	keywords={INICIO,FIN,IMPRIMIR,LEER,SI,SI_NO,FIN_SI,SEGUN_SEA,CASO,FIN_CASO,FIN_SEGUN_SEA,ENTONCES,MIENTRAS,REPETIR,PARA,POW,SQRT,MOD},
-	%keywordstyle=\color{blue}\bfseries,
-	%ndkeywords={CONST,ENTERO,REAL,BOOLEAN,CADENA,CARACTER},
-	%ndkeywordstyle=\color{magenta}\bfseries, %\color{darkgray}\bfseries, %\color{purple}\bfseries,
-	keywords=[2]{CONST,ENTERO,REAL,BOOLEAN,CADENA,CARACTER},
-	%keywordstyle=[2]\color{magenta}\bfseries, %\color{darkgray}\bfseries,	%\color{purple}\bfseries,
-	%identifiers={Texto},
-	%identifierstyle= \color{black}%\color{darkgray},
-	sensitive=true,
-	comment=[l]{//},
-	morecomment=[s]{/*}{*/},
-	%commentstyle=\color{editorGreen}\ttfamily, %\color{darkgray}\ttfamily, %commentstyle=\color{purple}\ttfamily,
-	%stringstyle=\color{orange}\ttfamily,
-	morestring=[b]',
-	morestring=[b]"
-}
-
-
-
-%define colors for coding
-\definecolor{codegreen}{rgb}{0,0.6,0} %for comments
-\definecolor{codegray}{rgb}{0.5,0.5,0.5} %for number lines
-\definecolor{codepurple}{rgb}{0.58,0,0.82} %for strings
-\definecolor{codecardinal}{HTML}{800000} %for strings
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92} %background box color
-\definecolor{codeblue}{HTML}{00008B}%#5D8EB5
-
-\lstdefinestyle{mycodestyle}{
-	language=algoritmialanguage,
-	backgroundcolor=\color{backcolour},   
-	commentstyle=\color{codegreen},
-	%commentstyle=\color{editorGreen}\ttfamily, %\color{darkgray}\ttfamily,
-	keywordstyle=\color{codeblue},%\color{magenta},%RoyalBlue
-	keywordstyle=[2]\color{magenta}\bfseries, %\color{darkgray}\bfseries,	%\color{purple}\bfseries,
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},%\color{orange},\color{editorOcher},codecardinal
-	columns= fullflexible,
-	basicstyle= \small\ttfamily, %\footnotesize\ttfamily, %\tiny\ttfamily,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	%captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
-	showstringspaces=false,
-	showtabs=false,                  
-	tabsize=3,
-	frame=lines,
-	%directivestyle=\color{black}
-	%xleftmargin=17pt,
-	%framexleftmargin=17pt,
-	%framexrightmargin=5pt,
-	%framexbottommargin=4pt   
-}
-%using mycodestyle
-%\lstset{style=mycodestyle}
-\lstset{
-	style=mycodestyle,
-	inputencoding = utf8,  % Input encoding
-	extendedchars = true,  % Extended ASCII
-	texcl         = false,  % Activate LaTeX commands in comments  %%true
-	mathescape    = false,   % Mathematical expressions between $  %%true
-	captionpos    = b,     % Caption position
-	literate=			   % Support additional characters
-	{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
-	{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
-	{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
-	{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
-	{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-	{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-	{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-	{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
-	{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-	{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
-	{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-	{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
-	{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
-	{¿}{{?`}}1 {¡}{{!`}}1
-	% ¿ and ¡ are not correctly displayed if inconsolata font is used
-	% together with the lstlisting environment. Consider typing code in
-	% external files and using \lstinputlisting to display them instead.
-}
-\makeatother
-
-
-
-%--------------------------------------
-%patch to fix showing tabs using lstlistings in beamer.
-%--------------------------------------
-\makeatletter
-\def\beamer@verbatimreadframe{%
-	\begingroup%
-	\let\do\beamer@makeinnocent\dospecials%
-	\count@=127%
-	\@whilenum\count@<255 \do{%
-		\advance\count@ by 1%
-		\catcode\count@=11%
-	}%
-	\beamer@makeinnocent\^^L% and whatever other special cases
-	\beamer@makeinnocent\^^I% <-- PATCH: allows tabs to be written to temp file
-	\endlinechar`\^^M \catcode`\^^M=12%
-	\@ifnextchar\bgroup{\afterassignment\beamer@specialprocessframefirstline\let\beamer@temp=}{\beamer@processframefirstline}}%
-\makeatother
-
-
 
 \begin{document}
 
@@ -355,59 +231,7 @@ c. Verificación (prueba y depuración)\\
 \end{enumerate}
 
 
-\vspace{120px}
-\newpage
-Ejemplo de pseudocódigo:
-\begin{lstlisting}%[language=algoritmialanguage]
-	
-	//Objetivo:  Calcular el agua restante en el tanque 
-	//Programador: Rogelio Prieto Alvarado
-	//Fecha:10/diciembre/2021
-	INICIO
-		//Declaración de constantes y variables
-		CONST ENTERO ConsumoSemanal=183
-		CONST ENTERO CapacidadInicial=10000
-		ENTERO CantidadRestante, Semana
-		//Lectura de datos de entrada
-		//Procesamiento de datos e impresión de resultados
-		//Paso 1. Inicializar la variable de control
-		CantidadRestante=CapacidadInicial
-		Semana=1
-		MIENTRAS(CantidadRestante>=ConsumoSemanal)
-			CantidadRestante=CantidadRestante-ConsumoSemanal
-			IMPRIMIR "Semana ",Semana," quedan ",CantidadRestante," litros en el tanque"
-			Semana=Semana+1
-		FIN_MIENTRAS
-	FIN
-\end{lstlisting}
 
-
-Ejemplo de programa en lenguaje c:
-\begin{lstlisting}[language=C]
-//Objetivo:  Calcular el agua restante en el tanque 
-//Programador: Rogelio Prieto Alvarado
-//Fecha:10/diciembre/2021
-	
-#include <stdio.h>
-
-int main(void)
-{
-	//Declaración de constantes y variables
-	const int ConsumoSemanal=183;
-	const int CapacidadInicial=10000;
-	int CantidadRestante, Semana;
-	//Lectura de datos de entrada
-	//Procesamiento de datos e impresión de resultados
-	//Paso 1. Inicializar la variable de control
-	CantidadRestante=CapacidadInicial;
-	Semana=1;
-	while(CantidadRestante>=ConsumoSemanal){
-		CantidadRestante=CantidadRestante-ConsumoSemanal;
-		printf("Semana %d quedan %d litros en el tanque\n", Semana, CantidadRestante);
-		Semana=Semana+1;
-	}
-}
-\end{lstlisting}
 
 
 
@@ -419,7 +243,7 @@ int main(void)
 %\rocketbox{	\textcolor{uasblue}{\textbf{\textsf{Nota.}}} Texto }
 
 
-\vspace{120px}
+\vspace{20px}
 
 
 

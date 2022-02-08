@@ -9,16 +9,20 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 2. Beamer templates for slides.
 
 
-## Listado de templates:
+## Listado de plantillas:
 
 ### plantilla01-tarea-preguntas
 
 Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque para consejos o información adicional y bibliografía.
 
 
-![página01](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-1-small.png)
+[![página01](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-1-small.png)](plantilla01-tarea-preguntas)
 
 ![página02](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-2-small.png)
+
+
+
+
 
 ### plantilla02-tarea-preguntas-codigo
 

@@ -18,7 +18,7 @@ Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque pa
 
 [![página01](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-1-small.png)](plantilla01-tarea-preguntas)
 
-![página02](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-2-small.png)
+[![página02](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/ejemplo/tarea06-2-small.png)](plantilla01-tarea-preguntas)
 
 
 

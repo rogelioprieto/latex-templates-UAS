@@ -29,9 +29,9 @@ Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque pa
 Contiene los mismo que la plantilla anterior, agrega bloques para mostrar código en cualquier lenguaje de programación que permite el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.
 
 
-[página01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-1-small.png)
-[página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-2-small.png)
-[página03](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-3-small.png)
+[![página01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-1-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla02-tarea-preguntas-codigo)
+[![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla02-tarea-preguntas-codigo)
+[![página03](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-3-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla02-tarea-preguntas-codigo)
 
 
 ### plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores

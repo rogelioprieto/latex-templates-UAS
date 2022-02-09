@@ -1,0 +1,82 @@
+\ProvidesPackage{assets/sublime-style}[2017/03/29 v.01 estilos y lenguajes para algoritmia]
+
+% Sublime c++ color scheme
+\definecolor{clr-background}{HTML}{383b40}%{rgb}{0.95,0.95,0.92}%{RGB}{255,255,255}% %sublimebgcolor{HTML}{272822} %background box color
+\definecolor{clr-text}{HTML}{d3d3d3}%gray
+\definecolor{clr-string}{HTML}{98c379}%green
+\definecolor{clr-namespace}{RGB}{0,0,0}
+\definecolor{clr-preprocessor}{HTML}{FD971F} %{e6c07b}%orange %{61aeee}%blue
+\definecolor{clr-keyword}{HTML}{61aeee}%blue  %{e6c07b}%orange %{19407A}%dodgerblue 
+\definecolor{clr-type}{HTML}{c678dd}%keyword[2] violet
+\definecolor{clr-variable}{HTML}{d3d3d3}%blue
+\definecolor{clr-constant}{RGB}{111,0,138} % macro color
+\definecolor{clr-comment}{HTML}{7D8C93}%gray{75715E}%{ffddbe}melon color
+\definecolor{clr-numbers}{rgb}{0.5,0.5,0.5} %for number lines
+
+\definecolor{codepink}{HTML}{E6DB74} %for strings
+
+\lstdefinestyle{sublime}{
+	language=c,
+	backgroundcolor=\color{clr-background},%{clr-background},
+	basicstyle=\color{clr-text}\small\ttfamily, %\footnotesize\ttfamily, %\tiny\ttfamily, % any text
+	stringstyle=\color{clr-string}\color{codepink},
+	identifierstyle=\color{clr-variable}, % just about anything that isn't a directive, comment, string or known type
+	commentstyle=\color{clr-comment},
+	directivestyle=\color{clr-preprocessor}, % preprocessor commands
+	%% listings doesn't differentiate between types and keywords (e.g. int vs return)
+	% use the user types color
+	keywordstyle=\color{clr-keyword},
+	keywordstyle={[2]\color{clr-type}}, % you'll need to define these or use a custom language
+	tabsize=4, %here ends VS2017 original
+	%this options are for background etc
+	showspaces=false,                
+	showstringspaces=false,
+	%%here begins generic configuration%%%%%%%%%%%%%%%%%%
+	numberstyle=\tiny\sffamily\color{clr-numbers},
+	numbers=left,                    
+	numbersep=5pt,
+	frame=none,%lines,%none, leftline, topline,single,shadowbox
+	%frameround=tttt,%fttt (the order is: top,rigth,botton,left)
+	columns= fullflexible,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	%captionpos=b,                    
+	keepspaces=true,                 
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false                  
+	%directivestyle=\color{black}
+	%xleftmargin=17pt,
+	%framexleftmargin=17pt,
+	%framexrightmargin=5pt,
+	%framexbottommargin=4pt   
+}
+
+%%Color scheme
+%blue
+%#61aeee
+
+%green
+%#98c379
+
+%violet
+%#c678dd
+
+%gray (basic text color)
+%#d3d3d3
+
+%orange
+%#e6c07b
+
+%green
+%#98c379
+
+%orange for numbers
+%#d19a66
+
+%melon
+%#ffddbe
+
+%gray for comments
+%7D8C93
+%%%%%%%%%%%%%%%

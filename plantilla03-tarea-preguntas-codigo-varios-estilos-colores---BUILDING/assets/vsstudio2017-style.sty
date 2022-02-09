@@ -1,0 +1,54 @@
+\ProvidesPackage{assets/vsstudio2017-style}[2017/03/29 v.01 estilos y lenguajes para algoritmia]
+
+% VS2017 C++ color scheme
+\definecolor{clr-background}{rgb}{0.95,0.95,0.92}%{rgb}{0.95,0.95,0.92}%{RGB}{255,255,255}% %sublimebgcolor{HTML}{272822} %background box color
+\definecolor{mycolorrpa}{HTML}{00F9DE}
+\definecolor{clr-text}{RGB}{0,0,0}
+\definecolor{clr-string}{RGB}{163,21,21}
+\definecolor{clr-namespace}{RGB}{0,0,0}
+\definecolor{clr-preprocessor}{RGB}{128,128,128}
+\definecolor{clr-keyword}{RGB}{0,0,255}
+\definecolor{clr-type}{RGB}{43,145,175}
+\definecolor{clr-variable}{RGB}{0,0,0}
+\definecolor{clr-constant}{RGB}{111,0,138} % macro color
+\definecolor{clr-comment}{RGB}{0,128,0}
+\definecolor{clr-numbers}{rgb}{0.5,0.5,0.5} %for number lines
+
+
+
+\lstdefinestyle{VS2017}{
+	language=c,
+	backgroundcolor=\color{clr-background},%{clr-background},
+	basicstyle=\color{clr-text}\small\ttfamily, %\footnotesize\ttfamily, %\tiny\ttfamily, % any text
+	stringstyle=\color{clr-string},
+	identifierstyle=\color{clr-variable}, % just about anything that isn't a directive, comment, string or known type
+	commentstyle=\color{clr-comment},
+	directivestyle=\color{clr-preprocessor}, % preprocessor commands
+	%% listings doesn't differentiate between types and keywords (e.g. int vs return)
+	% use the user types color
+	keywordstyle=\color{clr-type},
+	keywordstyle={[2]\color{clr-constant}}, % you'll need to define these or use a custom language
+	tabsize=4, %here ends VS2017 original
+	%this options are for background etc
+	showspaces=false,                
+	showstringspaces=false,
+	%%here begins generic configuration%%%%%%%%%%%%%%%%%%
+	numberstyle=\tiny\sffamily\color{clr-numbers},
+	numbers=left,                    
+	numbersep=5pt,
+	frame=none,%lines,%lines,%none, leftline, topline,single,shadowbox
+	%frameround=tttt,%fttt (the order is: top,rigth,botton,left)
+	columns= fullflexible,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	%captionpos=b,                    
+	keepspaces=true,                 
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false                  
+	%directivestyle=\color{black}
+	%xleftmargin=17pt,
+	%framexleftmargin=17pt,
+	%framexrightmargin=5pt,
+	%framexbottommargin=4pt   
+}

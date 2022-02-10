@@ -44,6 +44,7 @@ Tiene 3 estilos:
 2. sublime
 3. vs2017
 
+A continuación se muestra la página 2 aplicando cada uno de los estilos.
 #### 1. Estilo mycodestyle
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/mycodestyle/tarea06-mycodestyle-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
 

@@ -7,3 +7,8 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 1. Templates for assigments and
 2. Beamer templates for slides.
 
+
+Listado de plantillas:
+
+01 - tarea simple con preguntas
+![](t01-p01.png)

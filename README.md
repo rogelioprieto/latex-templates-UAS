@@ -48,10 +48,12 @@ Tiene 3 estilos:
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/mycodestyle/tarea06-mycodestyle-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
 #### Estilo sublime
 
-[![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/sublime/tarea06-sublime-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
+[![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/sublime/tarea06-sublime-style-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
+
+
 
 #### Estilo vs2017
-[![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/mycodestyle/tarea06-vs2017-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
+[![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/vs2017/tarea06-vs2017-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
 
 
 

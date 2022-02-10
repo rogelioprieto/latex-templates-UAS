@@ -40,19 +40,18 @@ Contiene los mismo que la plantilla anterior, agrega bloques para mostrar códig
 
 Similar a la plantilla anterior, ésta agrega bloques para mostrar código en cualquier lenguaje de programación que permita el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.
 Tiene 3 estilos:
-- mycodestyle
-- sublime
-- vs2017
+1. mycodestyle
+2. sublime
+3. vs2017
 
-#### Estilo mycodestyle
+#### 1. Estilo mycodestyle
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/mycodestyle/tarea06-mycodestyle-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
-#### Estilo sublime
+
+#### 2. Estilo sublime
 
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/sublime/tarea06-sublime-style-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
 
-
-
-#### Estilo vs2017
+#### 3. Estilo vs2017
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/vs2017/tarea06-vs2017-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
 
 

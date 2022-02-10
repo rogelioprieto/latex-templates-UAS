@@ -1,4 +1,9 @@
-cc-by-sa-4.0
+cc-by-nc-sa-4.0
+
+
+
+
+
 
 This project is licensed under the terms of the **Creative Commons**.
 

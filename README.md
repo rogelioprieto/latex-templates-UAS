@@ -36,8 +36,6 @@ Contiene los mismo que la plantilla anterior, agrega bloques para mostrar códig
 
 ### plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores
 
-⚠️⚠️*-Aún en construcción-*⚠️⚠️
-
 Similar a la plantilla anterior, ésta agrega bloques para mostrar código en cualquier lenguaje de programación que permita el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.
 Tiene 3 estilos:
 1. mycodestyle

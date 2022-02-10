@@ -1,3 +1,6 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = es_MX
+
 \RequirePackage{fix-cm} %to improve performance of cm-super package when you are writing in spanish or another non-english language.
 \documentclass[spanish,11pt,twoside]{article}
 
@@ -6,6 +9,22 @@
 %--------------------------------------
 \usepackage[spanish, mexico]{babel} %for proper hyphenation and translating the names of each document elements.
 \def\spanishoperators{} %Mathematical commands can also be imported specifically for the Spanish language. %https://www.sharelatex.com/learn/Spanish#Reference_guide. En este caso ya está definida previamente por otros paquetes.
+
+%--------------------------------------
+%inconsolata monofont
+%--------------------------------------
+%TODO inconsolata font
+\usepackage{inconsolata} %Enable Inconsolata font. Enable only monofont.
+%\usepackage{FiraMono}
+
+\makeatletter
+% Definition of \ttfamily from latex.ltx
+\DeclareRobustCommand\ttfamily
+{\not@math@alphabet\ttfamily\mathtt
+	\fontfamily\ttdefault\footnotesize\selectfont} %Change the font size only: \normalsize or \footnotesize etc
+\makeatother
+
+
 
 %--------------------------------------
 %encoding
@@ -27,7 +46,6 @@
 \definecolor{uasblue}{HTML}{19407A}
 
 
-
 %--------------------------------------
 %Table packages and style commands 
 %--------------------------------------
@@ -42,7 +60,16 @@
 
 %------------style for clean and better legibility tables--------
 \usepackage{booktabs} %has been written with good design in mind. %Specifically, it enhances lines in tables. It focuses on horizontal lines with improved spacing and adjustable thickness.
-\usepackage{float} %for use H option in tables: force position "HERE" 
+
+
+
+
+
+
+
+
+
+
 
 
 %--------------------------------------
@@ -70,6 +97,7 @@
 
 
 
+
 \usepackage{amsmath}
 %--------------------------------------
 %add specific information
@@ -79,7 +107,7 @@
 \newcommand{\myfaculty}{Facultad de Informática Culiacán}
 \newcommand{\myprofs}{\{Rogelio Prieto Alvarado, Gerardo Gálvez Gámez\}}
 \newcommand{\mycourse}{Algoritmia}
-\newcommand{\mysubject}{5. Resolución de problemas de selección}
+\newcommand{\mysubject}{4. Resolución de problemas secuenciales }
 \newcommand{\mydate}{Diciembre 10, 2021}
 \newcommand{\myhandoutnumber}{06} %Número de tarea
 \newcommand{\mytitledoc}{Problemas de Selección simple, doble o múltiple}
@@ -178,12 +206,14 @@
 
 %define algoritmia language
 \lstdefinelanguage{algoritmialanguage}{
-	keywords={INICIO,FIN,IMPRIMIR,LEER,SI,SI_NO,FIN_SI,SEGUN_SEA,CASO,FIN_CASO,FIN_SEGUN_SEA,ENTONCES,MIENTRAS,REPETIR,PARA,POW,SQRT,MOD},
+	keywords={INICIO,FIN,IMPRIMIR,LEER,SI,SI_NO,FIN_SI,SEGUN_SEA,CASO,FIN_CASO,FIN_SEGUN_SEA,ENTONCES,MIENTRAS,FIN_MIENTRAS,REPETIR,PARA,POW,SQRT}, %keywords %POW,SQRT
 	%keywordstyle=\color{blue}\bfseries,
 	%ndkeywords={CONST,ENTERO,REAL,BOOLEAN,CADENA,CARACTER},
 	%ndkeywordstyle=\color{magenta}\bfseries, %\color{darkgray}\bfseries, %\color{purple}\bfseries,
-	keywords=[2]{CONST,ENTERO,REAL,BOOLEAN,CADENA,CARACTER},
+	keywords=[2]{CONST,ENTERO,REAL,BOOLEAN,CADENA,CARACTER}, %customize datatypes words
 	%keywordstyle=[2]\color{magenta}\bfseries, %\color{darkgray}\bfseries,	%\color{purple}\bfseries,
+	keywords=[3]{*,MOD,NOT,+,-,AND,>, <, >=, <=, <>, ==, OR,=},%{MOD,*,+,-,(,),=,POW,SQRT,/},
+otherkeywords={*,MOD,NOT,+,-,AND,>, <, >=, <=, <>, ==, OR,=},%{*,MOD,NOT,+,-,AND,OR,NOT,>, <, >=, <=, <>, ==, OR,=},
 	%identifiers={Texto},
 	%identifierstyle= \color{black}%\color{darkgray},
 	sensitive=true,
@@ -196,37 +226,46 @@
 }
 
 
+%TODO BORRAR
+\definecolor{clr-background}{HTML}{383b40}%{rgb}{0.95,0.95,0.92}%{RGB}{255,255,255}% %sublimebgcolor{HTML}{272822} %background box color
 
 %define colors for coding
 \definecolor{codegreen}{rgb}{0,0.6,0} %for comments
 \definecolor{codegray}{rgb}{0.5,0.5,0.5} %for number lines
 \definecolor{codepurple}{rgb}{0.58,0,0.82} %for strings
 \definecolor{codecardinal}{HTML}{800000} %for strings
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92} %background box color
+\definecolor{clr-background}{rgb}{0.95,0.95,0.92} %background box color
+%\definecolor{backcolour}{HTML}{383b40}%{rgb}{0.95,0.95,0.92}%{RGB}{255,255,255}% %sublimebgcolor{HTML}{272822} %background box color
 \definecolor{codeblue}{HTML}{00008B}%#5D8EB5
+\definecolor{codeoperator}{HTML}{FF5000}%{FF5000}%orangefosfo%{66CCB3}%aquamarine{52E3F6}%bluefosfo{FF8000}orange%{800000}cardinal%{757575}gray%{75715E}brown{CCDF32}%,magenta{F92672}%{A6E22E}%greenfosfo%{F97B58}orangesublime
 
 \lstdefinestyle{mycodestyle}{
 	language=algoritmialanguage,
-	backgroundcolor=\color{backcolour},   
-	commentstyle=\color{codegreen},
-	%commentstyle=\color{editorGreen}\ttfamily, %\color{darkgray}\ttfamily,
+	backgroundcolor=\color{clr-background},   
+	basicstyle=\small\ttfamily\color{black!85}, %\footnotesize\ttfamily, %\tiny\ttfamily,
+	stringstyle=\color{codepurple},%\color{orange},\color{editorOcher},codecardinal
+	%identifierstyle=\color{black}, % just about anything that isn't a directive, comment, string or known type
+	commentstyle=\color{codegreen},%\slshape,%\itshape,%\color{gray}, %nasacolor \color{purple!40!black}
+	%commentstyle=\color{editorGreen}, %\color{darkgray},
+	%directivestyle=\color{clr-preprocessor}, % preprocessor commands
 	keywordstyle=\color{codeblue},%\color{magenta},%RoyalBlue
 	keywordstyle=[2]\color{magenta}\bfseries, %\color{darkgray}\bfseries,	%\color{purple}\bfseries,
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},%\color{orange},\color{editorOcher},codecardinal
+	keywordstyle=[3]\color{codeoperator}\bfseries\color{Bittersweet}\color{purple},%\color{Fuchsia},%\color{purple},%\color{darkgray}\bfseries,%\color{black!60},
+	tabsize=3,
+	%%here begins generic configuration
+	numberstyle=\scriptsize\sffamily\color{codegray},
+	numbers=left,                    
+	numbersep=5pt,
+	frame=none,%lines,
+	%frameround=tttt,%fttt (the order is: top,rigth,botton,left)
 	columns= fullflexible,
-	basicstyle= \small\ttfamily, %\footnotesize\ttfamily, %\tiny\ttfamily,
 	breakatwhitespace=false,         
 	breaklines=true,                 
 	%captionpos=b,                    
 	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
 	showspaces=false,                
 	showstringspaces=false,
 	showtabs=false,                  
-	tabsize=3,
-	frame=lines,
 	%directivestyle=\color{black}
 	%xleftmargin=17pt,
 	%framexleftmargin=17pt,
@@ -236,7 +275,7 @@
 %using mycodestyle
 %\lstset{style=mycodestyle}
 \lstset{
-	style=mycodestyle,
+	%style=mycodestyle,
 	inputencoding = utf8,  % Input encoding
 	extendedchars = true,  % Extended ASCII
 	texcl         = false,  % Activate LaTeX commands in comments  %%true
@@ -261,9 +300,27 @@
 	% together with the lstlisting environment. Consider typing code in
 	% external files and using \lstinputlisting to display them instead.
 }
+
+%TODO code style
+%%%%%%%%%%Choose a listings code style (choose only one)%%%%%%%%%%
+%%%%1. mycodestyle%%%%
+%\lstset{style=mycodestyle}
+%%%%2. Visual Studio 2017%%%%
+%\usepackage{assets/vsstudio2017-style}
+%\lstset{style=VS2017}
+%%%%3. Sublime Style%%%%
+\usepackage{assets/sublime-style}
+\lstset{style=sublime}
+
+%%%%Finally set the default language for 
+\lstset{language=algoritmialanguage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \makeatother
 
-
+%\usepackage{verbatim}
+\usepackage{moreverb}
+\usepackage[framemethod=default]{mdframed}
 
 %--------------------------------------
 %patch to fix showing tabs using lstlistings in beamer.
@@ -316,6 +373,7 @@ c. Verificación (prueba y depuración)\\
 \textcolor{uasblue}{\faPencil*}
 \textbf{Instrucciones de entrega:} Deberá resolver el ejercicio y realizar las respuestas a mano.\\
 
+
 %\medskip
 
 \hrulefill
@@ -325,100 +383,39 @@ c. Verificación (prueba y depuración)\\
 
 \begin{enumerate}
 	\tightlist %for reduce space between paragraphs
-	\item Para las soluciones a los problemas resueltos en la diapositiva \texttt{Estructuras Algoritmicas de Seleccion simples.pdf}, resolver:
-	\begin{enumerate}
-		\tightlist
-		\item Indique ¿cuáles problemas pueden ser resueltos usando estructura algorítmica de selección Doble?
-		\item Elija uno de los problemas que indicó en la pregunta 1, reescriba la «construcción del algoritmo» utilizando estructura de selección doble.
-	\end{enumerate}
+	\item En una granja se requiere saber alguna información para determinar el precio de venta 
+	por cada kilo de huevo. Es importante determinar que el promedio de calidad de las 2 gallinas que hay en la granja. La calidad de cada gallina se obtiene según la siguiente forma:\\
+	\texttt{CalidadGallina = (PesoGallina*AlturaGallina)/HuevosPuestos}
+
+
+	El peso de la gallina se mide en kilogramos y la altura se mide en centímetros.
+	Finalmente para fijar el precio del kilo de huevo se toma como base la siguiente tabla:
+
 	
 
-	\item Elaborar un pseudocódigo que permita leer 3 números enteros y determine cuál es mayor. Considere que los tres números son diferentes.	
-	
-	
-	\item Del Libro "Metodología de la programación"\ de Osvaldo Cairo, resuelva el siguiente
-	problema:\textsf{PS 2.18, página 415}. Construya un algoritmo que le permita calcular e imprimir el costo final de una llamada telefónica. Para calcular el costo final se sigue lo indicado en la siguiente tabla:
-	
 	%Example, source by Stefan Kottwitz in LaTeX Cookbook 1st edition, chapter 6.
 	%NOTE: this table only uses table package.
-	\begin{table}[H]%[ht]
+	\begin{table}[ht]
 		\rowcolors{2}{gray!15}{white} %Declare alternating row colors
 		\renewcommand{\arraystretch}{1.5} %Enlarge the default tabular line spacing
 		\centering\footnotesize%\small
 		\sffamily%\ttfamily
 		
 		%\caption{Texto de caption, debe aparecer antes de la tabla}
-		\label{table:problemas:llamada}
-		\begin{tabular}{lccc}
+		\label{table:linux:distributions}
+		\begin{tabular}{lr}
 			\rowcolor{uasblue}%black!75
-			\head{Clave}& \head{Zona} 		& \head{Precio/Minuto (3 primeros)} & \head{Precio/Minuto (del 4to en adelante)}\\
-			12 			& América del Norte	& 2									& 1.5 \\
-			15			& América Central	& 2.2								& 1.8 \\
-			18			& América del Sur	& 4.5								& 3.5 \\
-			19			& Europa			& 3.5								& 2.7 \\
-			23			& Asia				& 6									& 4.6 \\
-			25			& África			& 6									& 4.6 \\
-			29			& Oceanía			& 5									& 3.9 \\
+			\head{Promedio de calidad} & \head{Precio por Kilo de huevo} \\
+			PromedioCalidad mayor a 8 			& 1.2*PromedioCalidad \\
+			PromedioCalidad igual o menor a 8 	& 0.8*PromedioCalidad \\
 		\end{tabular}
 	\end{table}
 	
+	
+	\item Elaborar un pseudocódigo que permita leer 3 números enteros y determine cuál es mayor. Considere que los tres números son diferentes.
+	
+		
 \end{enumerate}
-
-
-\vspace{120px}
-\newpage
-Ejemplo de pseudocódigo:
-\begin{lstlisting}%[language=algoritmialanguage]
-	
-	//Objetivo:  Calcular el agua restante en el tanque 
-	//Programador: Rogelio Prieto Alvarado
-	//Fecha:10/diciembre/2021
-	INICIO
-		//Declaración de constantes y variables
-		CONST ENTERO ConsumoSemanal=183
-		CONST ENTERO CapacidadInicial=10000
-		ENTERO CantidadRestante, Semana
-		//Lectura de datos de entrada
-		//Procesamiento de datos e impresión de resultados
-		//Paso 1. Inicializar la variable de control
-		CantidadRestante=CapacidadInicial
-		Semana=1
-		MIENTRAS(CantidadRestante>=ConsumoSemanal)
-			CantidadRestante=CantidadRestante-ConsumoSemanal
-			IMPRIMIR "Semana ",Semana," quedan ",CantidadRestante," litros en el tanque"
-			Semana=Semana+1
-		FIN_MIENTRAS
-	FIN
-\end{lstlisting}
-
-
-Ejemplo de programa en lenguaje c:
-\begin{lstlisting}[language=C]
-//Objetivo:  Calcular el agua restante en el tanque 
-//Programador: Rogelio Prieto Alvarado
-//Fecha:10/diciembre/2021
-	
-#include <stdio.h>
-
-int main(void)
-{
-	//Declaración de constantes y variables
-	const int ConsumoSemanal=183;
-	const int CapacidadInicial=10000;
-	int CantidadRestante, Semana;
-	//Lectura de datos de entrada
-	//Procesamiento de datos e impresión de resultados
-	//Paso 1. Inicializar la variable de control
-	CantidadRestante=CapacidadInicial;
-	Semana=1;
-	while(CantidadRestante>=ConsumoSemanal){
-		CantidadRestante=CantidadRestante-ConsumoSemanal;
-		printf("Semana %d quedan %d litros en el tanque\n", Semana, CantidadRestante);
-		Semana=Semana+1;
-	}
-}
-\end{lstlisting}
-
 
 
 \begin{noteblock} %tipblock 
@@ -440,13 +437,105 @@ int main(void)
 %%utilizar cualquier ícono, manera abreviada con un comando propio.
 %\myawesomeboxshort{\faCalendar}{Fechas importantes.}{En una semana deberá finalizar todas las tareas de la unidad.}
 
+\vspace{120px}
 
-\vspace{24px}
+
+
+
+
+Pseudocódigo. Colores en estilo \texttt{sublime} 
+\begin{mdframed}[backgroundcolor=clr-background,topline=true,bottomline=true,leftline=false,rightline=false,innerleftmargin=\leftskip, innertopmargin=0pt]
+\begin{lstlisting}%[language=algoritmialanguage]
+	
+	//Objetivo:  Calcular el agua restante en el tanque 
+	//Programador: Rogelio Prieto Alvarado
+	//Fecha:10/diciembre/2021
+	INICIO
+		//Declaración de constantes y variables
+		CONST ENTERO ConsumoSemanal=183
+		CONST ENTERO CapacidadInicial=10000
+		ENTERO CantidadRestante, Semana
+		//Lectura de datos de entrada
+		//Procesamiento de datos e impresión de resultados
+		//Paso 1. Inicializar la variable de control
+		CantidadRestante=CapacidadInicial
+		Semana=1
+		MIENTRAS(CantidadRestante>=ConsumoSemanal)
+			CantidadRestante=CantidadRestante-ConsumoSemanal
+			IMPRIMIR "Semana ",Semana," quedan ",CantidadRestante," litros en el tanque"
+			Semana=Semana+1
+		FIN_MIENTRAS
+	FIN	
+\end{lstlisting}
+\end{mdframed}
+
+\vspace{20pt}
+Código en Lenguaje C. Colores en estilo \texttt{sublime}
+%\begin{mdframed}[backgroundcolor=clr-background,hidealllines=true,innerleftmargin = \leftskip, innertopmargin=0pt]
+%\begin{mdframed}[backgroundcolor=clr-background]
+\begin{mdframed}[backgroundcolor=clr-background,topline=true,bottomline=true,leftline=false,rightline=false,innerleftmargin=\leftskip, innertopmargin=0pt]
+
+	\begin{lstlisting}[language=C]
+//Objetivo:  Calcular el agua restante en el tanque 
+//Programador: Rogelio Prieto Alvarado
+//Fecha:10/diciembre/2021
+
+#include <stdio.h>
+
+int main(void)
+{
+	//Declaración de constantes y variables
+	const int ConsumoSemanal=183;
+	const int CapacidadInicial=10000;
+	int CantidadRestante, Semana;
+	//Lectura de datos de entrada
+	//Procesamiento de datos e impresión de resultados
+	//Paso 1. Inicializar la variable de control
+	CantidadRestante=CapacidadInicial;
+	Semana=1;
+	while(CantidadRestante>=ConsumoSemanal){
+		CantidadRestante=CantidadRestante-ConsumoSemanal;
+		printf("Semana %d quedan %d litros en el tanque\n", Semana, CantidadRestante);
+		Semana=Semana+1;
+	}
+} \end{lstlisting}
+\end{mdframed}
+
+
+
+
+\newpage
+Otra manera de insertar código en este documento.
+
+\begin{verbatimwrite}{./temp.c}
+	#include <stdio.h>
+	int main() {
+		int n, i, sum = 0;
+		
+		printf("Enter a positive integer: ");
+		scanf("%d", &n);
+		
+		for (i = 1; i <= n; ++i) {
+			sum += i;
+		}
+		
+		printf("Sum = %d", sum);
+		return 0;
+	}
+\end{verbatimwrite}
+\begin{mdframed}[backgroundcolor=clr-background,topline=true,bottomline=true,leftline=false,rightline=false,innerleftmargin=\leftskip, innertopmargin=0pt]
+	\lstinputlisting[language=C,mathescape,frame=none]{./temp.c}
+\end{mdframed}
+
+
+%Why I use mdframed with listings?
+%answer in: 
+%https://tex.stackexchange.com/questions/334100/listings-lstlisting-environment-has-white-horizontal-lines
 
 
 
 %--------------------------------------
-% Insert bibliography
+% Insert bibligraphy
 %--------------------------------------
 %change References heading
 %\renewcommand{\bibname}{whatever} %used for book document class

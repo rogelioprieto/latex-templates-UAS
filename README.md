@@ -16,9 +16,9 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque para consejos o información adicional y bibliografía.
 
 
-[![página01](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/screenshots/tarea06-1-small.png)](plantilla01-tarea-preguntas)
+[![página01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla01-tarea-preguntas-codigo/screenshots/tarea06-1-small.png)](plantilla01-tarea-preguntas)
 
-[![página02](https://github.com/rogelioprieto/latex-templates-UAS/blob/master/plantilla01-tarea-preguntas/screenshots/tarea06-2-small.png)](plantilla01-tarea-preguntas)
+[![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla01-tarea-preguntas-codigo/screenshots/tarea06-1-small.png)](plantilla01-tarea-preguntas)
 
 
 

@@ -1,0 +1,24 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aguilar(2008)]{aguilar2008fundamentos}
+Luis Aguilar.
+\newblock \emph{Fundamentos de programación : algoritmos, estructuras de datos
+  y objetos}.
+\newblock McGraw-Hill/Interamericana, España, 2008.
+\newblock ISBN 978-84-481-6111-8.
+
+\bibitem[Battistutti(2005)]{battistutti2005metodologia}
+Osvaldo Battistutti.
+\newblock \emph{Metodología de la programación : algoritmos, diagramas de
+  flujo y programas}.
+\newblock Alfaomega, México, 2005.
+\newblock ISBN 970151100X.
+\newblock URL
+  \url{https://www.gonvill.com.mx/libro/metodologia-de-la-programacion-3ed-_07106652}.
+
+\end{thebibliography}

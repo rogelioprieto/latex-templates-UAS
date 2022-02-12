@@ -15,6 +15,21 @@
 
 
 %--------------------------------------
+%set another mono font for Typewriter font (used in listings too!)
+%--------------------------------------
+%TODO set monofont
+%\usepackage{inconsolata} %Enable Inconsolata font. it enables only monofont.
+%\usepackage{FiraMono}
+
+\makeatletter % This change the monofont size for the text in the document. Objective: same size in listings and in the document for monofont.
+% Definition of \ttfamily from latex.ltx
+\DeclareRobustCommand\ttfamily
+{\not@math@alphabet\ttfamily\mathtt
+	\fontfamily\ttdefault\footnotesize\selectfont} %Change the font size only: \normalsize or \footnotesize etc
+\makeatother
+
+
+%--------------------------------------
 %Colors
 %--------------------------------------
 %Using this package, you can set the font color, text background, or page background. You can choose from predefined colors or define your own colors using RGB, Hex, or CMYK. Mathematical formulas can also be colored.
@@ -285,11 +300,20 @@
 
 
 %--------------------------------------
-%enumerate setup (taken from pandoc)
+%enumerate environment setup (taken from pandoc)
 %--------------------------------------
 \providecommand{\tightlist}{%
-	\setlength{\itemsep}{6pt}\setlength{\parskip}{0pt}}\providecommand{\tightlist}{%
-	\setlength{\itemsep}{6pt}\setlength{\parskip}{0pt}}
+	\setlength{\itemsep}{3pt}\setlength{\parskip}{10pt}}
+%\providecommand{\tightlist}{%
+	%	\setlength{\itemsep}{6pt}\setlength{\parskip}{6pt}}
+
+%--------------------------------------
+%defautl bullets for itemize environment
+%--------------------------------------
+\renewcommand{\labelitemi}{\textcolor{darkgray}{$\bullet$}}%{$\cdotp$}%{$\cdot$}
+\renewcommand{\labelitemii}{$-$}
+%\renewcommand{\labelitemiii}{$\circ$}
+%\renewcommand{\labelitemiv}{$\circ$}
 
 
 \begin{document}
@@ -336,8 +360,8 @@ c. Verificación (prueba y depuración)\\
 	\item Elaborar un pseudocódigo que permita leer 3 números enteros y determine cuál es mayor. Considere que los tres números son diferentes.	
 	
 	
-	\item Del Libro "Metodología de la programación"\ de Osvaldo Cairo, resuelva el siguiente
-	problema:\textsf{PS 2.18, página 415}. Construya un algoritmo que le permita calcular e imprimir el costo final de una llamada telefónica. Para calcular el costo final se sigue lo indicado en la siguiente tabla:
+	\item Del Libro ``Metodología de la programación'' de Osvaldo Cairo, resuelva el siguiente
+	problema: \textsf{PS 2.18, página 415}. Construya un algoritmo que le permita calcular e imprimir el costo final de una llamada telefónica. Para calcular el costo final se sigue lo indicado en la siguiente tabla:
 	
 	%Example, source by Stefan Kottwitz in LaTeX Cookbook 1st edition, chapter 6.
 	%NOTE: this table only uses table package.

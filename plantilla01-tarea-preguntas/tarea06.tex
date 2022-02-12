@@ -182,12 +182,28 @@
 \makeatother
 
 
+
 %--------------------------------------
-%enumerate setup (taken from pandoc)
+%enumerate environment setup (taken from pandoc)
 %--------------------------------------
 \providecommand{\tightlist}{%
-	\setlength{\itemsep}{6pt}\setlength{\parskip}{0pt}}\providecommand{\tightlist}{%
-	\setlength{\itemsep}{6pt}\setlength{\parskip}{0pt}}
+	\setlength{\itemsep}{3pt}\setlength{\parskip}{10pt}}
+%\providecommand{\tightlist}{%
+	%	\setlength{\itemsep}{6pt}\setlength{\parskip}{6pt}}
+
+%--------------------------------------
+%defautl bullets for itemize environment
+%--------------------------------------
+\renewcommand{\labelitemi}{\textcolor{darkgray}{$\bullet$}}%{$\cdotp$}%{$\cdot$}
+\renewcommand{\labelitemii}{$-$}
+%\renewcommand{\labelitemiii}{$\circ$}
+%\renewcommand{\labelitemiv}{$\circ$}
+
+%--------------------------------------
+%set another mono font for Typewriter font (used in listings too!)
+%--------------------------------------
+%\usepackage{inconsolata}
+%\usepackage{FiraMono}
 
 
 \begin{document}
@@ -234,7 +250,7 @@ c. Verificación (prueba y depuración)\\
 	\item Elaborar un pseudocódigo que permita leer 3 números enteros y determine cuál es mayor. Considere que los tres números son diferentes.	
 	
 	
-	\item Del Libro "Metodología de la programación"\ de Osvaldo Cairo, resuelva el siguiente
+	\item Del Libro ``Metodología de la programación'' de Osvaldo Cairo, resuelva el siguiente
 	problema:\textsf{PS 2.18, página 415}. Construya un algoritmo que le permita calcular e imprimir el costo final de una llamada telefónica. Para calcular el costo final se sigue lo indicado en la siguiente tabla:
 	
 	%Example, source by Stefan Kottwitz in LaTeX Cookbook 1st edition, chapter 6.

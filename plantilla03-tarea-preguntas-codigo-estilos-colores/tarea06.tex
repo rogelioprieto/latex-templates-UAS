@@ -11,26 +11,24 @@
 \def\spanishoperators{} %Mathematical commands can also be imported specifically for the Spanish language. %https://www.sharelatex.com/learn/Spanish#Reference_guide. En este caso ya está definida previamente por otros paquetes.
 
 %--------------------------------------
-%inconsolata monofont
+%encoding
 %--------------------------------------
-%TODO inconsolata font
-\usepackage{inconsolata} %Enable Inconsolata font. Enable only monofont.
+\usepackage[utf8]{inputenc} %Allow to input letters of national alphabets directly from the keyboard.
+\usepackage[T1]{fontenc} %choose a font encoding which has to support specific characters for Spanish language
+
+%--------------------------------------
+%set another mono font for Typewriter font (used in listings too!)
+%--------------------------------------
+%TODO set monofont
+%\usepackage{inconsolata} %Enable Inconsolata font. it enables only monofont.
 %\usepackage{FiraMono}
 
-\makeatletter
+\makeatletter % This change the monofont size for the text in the document. Objective: same size in listings and in the document for monofont.
 % Definition of \ttfamily from latex.ltx
 \DeclareRobustCommand\ttfamily
 {\not@math@alphabet\ttfamily\mathtt
 	\fontfamily\ttdefault\footnotesize\selectfont} %Change the font size only: \normalsize or \footnotesize etc
 \makeatother
-
-
-
-%--------------------------------------
-%encoding
-%--------------------------------------
-\usepackage[utf8]{inputenc} %Allow to input letters of national alphabets directly from the keyboard.
-\usepackage[T1]{fontenc} %choose a font encoding which has to support specific characters for Spanish language
 
 
 %--------------------------------------
@@ -226,7 +224,7 @@ otherkeywords={*,MOD,NOT,+,-,AND,>, <, >=, <=, <>, ==, OR,=},%{*,MOD,NOT,+,-,AND
 }
 
 
-%TODO BORRAR
+
 \definecolor{clr-background}{HTML}{383b40}%{rgb}{0.95,0.95,0.92}%{RGB}{255,255,255}% %sublimebgcolor{HTML}{272822} %background box color
 
 %define colors for coding
@@ -301,7 +299,7 @@ otherkeywords={*,MOD,NOT,+,-,AND,>, <, >=, <=, <>, ==, OR,=},%{*,MOD,NOT,+,-,AND
 	% external files and using \lstinputlisting to display them instead.
 }
 
-%TODO code style
+%TODO set code style
 %%%%%%%%%%Choose a listings code style (choose only one)%%%%%%%%%%
 %%%%1. mycodestyle%%%%
 %\lstset{style=mycodestyle}
@@ -342,11 +340,22 @@ otherkeywords={*,MOD,NOT,+,-,AND,>, <, >=, <=, <>, ==, OR,=},%{*,MOD,NOT,+,-,AND
 
 
 %--------------------------------------
-%enumerate setup (taken from pandoc)
+%enumerate environment setup (taken from pandoc)
 %--------------------------------------
 \providecommand{\tightlist}{%
-	\setlength{\itemsep}{6pt}\setlength{\parskip}{0pt}}\providecommand{\tightlist}{%
-	\setlength{\itemsep}{6pt}\setlength{\parskip}{0pt}}
+	\setlength{\itemsep}{3pt}\setlength{\parskip}{10pt}}
+%\providecommand{\tightlist}{%
+	%	\setlength{\itemsep}{6pt}\setlength{\parskip}{6pt}}
+
+%--------------------------------------
+%defautl bullets for itemize environment
+%--------------------------------------
+\renewcommand{\labelitemi}{\textcolor{darkgray}{$\bullet$}}%{$\cdotp$}%{$\cdot$}
+\renewcommand{\labelitemii}{$-$}
+%\renewcommand{\labelitemiii}{$\circ$}
+%\renewcommand{\labelitemiv}{$\circ$}
+
+
 
 
 \begin{document}

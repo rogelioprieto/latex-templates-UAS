@@ -79,4 +79,4 @@ A continuación se muestra la página 2 aplicando cada uno de los estilos.
 [![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
-Este trabajo y el repositorio tiene una licencia [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://crea]tivecommons.org/licenses/by-nc-sa/4.0/)
+Este trabajo y el repositorio tiene una licencia [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

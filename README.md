@@ -32,7 +32,7 @@ Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque pa
 *Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
 
-[![↑](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/assets/icons/up-arrow-32px.png) Regresar a inicio](#)
+[![↑](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/assets/icons/up-arrow-16px.png) Regresar a inicio](#)
 
 ### plantilla02-tarea-preguntas-codigo
 

@@ -12,10 +12,10 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 ## Listado de plantillas
 
 
-[plantilla01-tarea-preguntas](#plantilla01-tarea-preguntas)
-[plantilla02-tarea-preguntas-codigo](#plantilla02-tarea-preguntas-codigo)
-[plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores](#plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores)
-[plantilla-tarea-básica](#plantilla-tarea-básica)
+- [01-tarea-preguntas](#plantilla01-tarea-preguntas)
+- [02-tarea-preguntas-codigo](#plantilla02-tarea-preguntas-codigo)
+- [03-tarea-preguntas-codigo-varios-estilos-colores](#plantilla03-tarea-preguntas-codigo-varios-estilos-colores)
+- [plantilla-tarea-básica](#plantilla-tarea-básica)
 
 
 
@@ -47,7 +47,7 @@ Contiene los mismo que la plantilla anterior, agrega bloques para mostrar códig
 *Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
 
-### plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores
+### plantilla03-tarea-preguntas-codigo-varios-estilos-colores
 
 Similar a la plantilla anterior, ésta agrega bloques para mostrar código en cualquier lenguaje de programación que permita el paquete `listings`. Se han personalizado el estilo (colores y fuente) para mostrar esos bloques de código.
 Tiene 3 estilos:

@@ -15,7 +15,7 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 - [01-tarea-preguntas](#plantilla01-tarea-preguntas)
 - [02-tarea-preguntas-codigo](#plantilla02-tarea-preguntas-codigo)
 - [03-tarea-preguntas-codigo-varios-estilos-colores](#plantilla03-tarea-preguntas-codigo-varios-estilos-colores)
-- [plantilla-tarea-básica](#plantilla-tarea-básica)
+- [04-tarea-básica](#plantilla04-tarea-básica)
 
 
 
@@ -70,7 +70,7 @@ A continuación se muestra la página 2 aplicando cada uno de los estilos.
 *Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
 
-### plantilla-tarea-básica
+### plantilla04-tarea-básica
 
 Esta es la plantilla más básica. Contiene un encabezado de identificación y el listado de preguntas.
 

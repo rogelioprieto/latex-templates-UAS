@@ -6,7 +6,7 @@ Aquí encontrarás plantillas de LaTeX que he utilizado en mi trabajo como docen
 *English:*
 Here, You will find templates de LaTeX that I have used in my work as teacher at Universidad Autónoma de Sinaloa (UAS).
 1. Templates for assigments and
-2. Beamer templates for slides.
+2. Template for slides (Beamer package).
 
 
 ## Listado de plantillas

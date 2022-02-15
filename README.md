@@ -67,7 +67,7 @@ A continuación se muestra la página 2 aplicando cada uno de los estilos.
 
 ### plantilla-tarea-básica
 
-[![página01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla04-tarea-basica/screenshots/cuestionario01-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla04-tarea-basica)
+[![página01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla04-tarea-basica/screenshots/cuestionario01-1-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla04-tarea-basica)
 
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla04-tarea-basica/screenshots/cuestionario01-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla04-tarea-basica)
 

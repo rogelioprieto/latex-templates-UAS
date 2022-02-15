@@ -12,6 +12,11 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 ## Listado de plantillas
 
 
+[plantilla01-tarea-preguntas](#plantilla01-tarea-preguntas)
+[plantilla02-tarea-preguntas-codigo](#plantilla02-tarea-preguntas-codigo)
+[plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores](#plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores)
+[plantilla-tarea-básica](#plantilla-tarea-básica)
+
 
 
 ### plantilla01-tarea-preguntas

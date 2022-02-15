@@ -32,7 +32,7 @@ Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque pa
 *Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
 
-[![↑](https://raw.githubusercontent.com/rogelioprieto/linux-tips/master/assets/icons/up-arrow-32px.png) Inicio](#)
+[![↑](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/assets/icons/up-arrow-32px.png) Regresar a inicio](#)
 
 ### plantilla02-tarea-preguntas-codigo
 
@@ -45,6 +45,8 @@ Contiene los mismo que la plantilla anterior, agrega bloques para mostrar códig
 
 
 *Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
+
+[![↑](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/assets/icons/up-arrow-32px.png) Regresar a inicio](#)
 
 
 ### plantilla03-tarea-preguntas-codigo-varios-estilos-colores
@@ -69,6 +71,8 @@ A continuación se muestra la página 2 aplicando cada uno de los estilos.
 
 *Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
+[![↑](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/assets/icons/up-arrow-32px.png) Regresar a inicio](#)
+
 
 ### plantilla04-tarea-básica
 
@@ -80,6 +84,8 @@ Esta es la plantilla más básica. Contiene un encabezado de identificación y e
 
 *Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
+[![↑](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/assets/icons/up-arrow-32px.png) Regresar a inicio](#)
+
 
 ## Licencia
 
@@ -87,3 +93,6 @@ Esta es la plantilla más básica. Contiene un encabezado de identificación y e
 
 
 Este trabajo y el repositorio tiene una [licencia](LICENSE.md) [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
+[![↑](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/assets/icons/up-arrow-32px.png) Regresar a inicio](#)

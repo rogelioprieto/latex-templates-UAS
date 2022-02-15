@@ -1,0 +1,228 @@
+\RequirePackage{fix-cm} %to improve performance of cm-super package when you are writing in spanish or another non-english language.
+\documentclass[spanish,11pt,twoside]{article}
+
+
+%--------------------------------------
+%Credits. This template is based in a template provided by OCW MIT
+%https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/assignments/
+%
+% TEX: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/assignments/ps1.tex
+% PDF: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2008/assignments/ps1.pdf
+%--------------------------------------
+
+
+%--------------------------------------
+%Spanish-specific commands
+%--------------------------------------
+\usepackage[spanish, mexico]{babel} %for proper hyphenation and translating the names of each document elements.
+\def\spanishoperators{} %Mathematical commands can also be imported specifically for the Spanish language. %https://www.sharelatex.com/learn/Spanish#Reference_guide. En este caso ya está definida previamente por otros paquetes.
+
+%--------------------------------------
+%encoding
+%--------------------------------------
+\usepackage[utf8]{inputenc} %Allow to input letters of national alphabets directly from the keyboard.
+\usepackage[T1]{fontenc} %choose a font encoding which has to support specific characters for Spanish language
+	
+
+%--------------------------------------
+%Colors
+%--------------------------------------
+%Using this package, you can set the font color, text background, or page background. You can choose from predefined colors or define your own colors using RGB, Hex, or CMYK. Mathematical formulas can also be colored.
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor} %allow predefined name colors
+%\usepackage[usenames,dvipsnames]{xcolor} %allow predefined 
+%\usepackage[dvipsnames]{xcolor} %allow predefined
+%TO-DO url:https://www.sharelatex.com/learn/Using_colours_in_LaTeX#/Reference_guide
+%TO-DO url:https://en.wikibooks.org/wiki/LaTeX/Colors
+
+
+
+
+
+
+
+
+
+
+\usepackage{amsmath}
+%--------------------------------------
+%add specific information
+%--------------------------------------
+%TODO Change document information
+\newcommand{\myuniversity}{Universidad Autónoma de Sinaloa}
+\newcommand{\myfaculty}{Facultad de Informática Culiacán}
+\newcommand{\myprofs}{Rogelio Prieto Alvarado, Roy Jonny Sida López}
+\newcommand{\mycourse}{Inteligencia Artificial}
+\newcommand{\mysubject}{Unidad I. Introducción a la IA}
+\newcommand{\mydate}{Diciembre 10, 2021}
+\newcommand{\myhandoutnumber}{01} %Número de tarea
+\newcommand{\mytitledoc}{Cuestionario}
+
+\newcommand{\profs}{Roy Jonny Sida López, Rogelio Prieto Alvarado}
+\newcommand{\subj}{Unidad I}
+
+\newlength{\toppush}
+\setlength{\toppush}{2\headheight}
+\addtolength{\toppush}{\headsep}
+
+\newcommand{\htitle}[3]{\noindent\vspace*{-\toppush}\newline\parbox{6.5in}
+{\textit{\mycourse: \mysubject}\hfill\newline
+\myuniversity \newline \myfaculty \hfill #3\newline
+\profs\hfill Tarea #1\vspace*{-.5ex}\newline
+\mbox{}\hrulefill\mbox{}}\vspace*{1ex}\mbox{}\newline
+\begin{center}{\Large\bf #2}\end{center}}
+
+\newcommand{\handout}[3]{\thispagestyle{empty}
+ \markboth{Tarea #1: #2}{Tarea #1: #2}
+  \pagestyle{myheadings}\htitle{#1}{#2}{#3}}
+
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+
+%--------------------------------------	
+%crear nuevas variables para ser agregadas en los metadatos del PDF.
+%--------------------------------------
+%\makeatletter
+%\let\pdftitle\@title
+%\let\pdfauthor\@author
+%\makeatother
+\let\pdftitle\mycourse
+\let\pdfauthor\myprofs
+\let\pdfsubject\mysubject
+
+%--------------------------------------
+%hyperreferences
+%--------------------------------------
+%\usepackage{color}
+\usepackage{hyperref} %is used to han­dle cross-ref­er­enc­ing com­mands in LaTeX to pro­duce hy­per­text links in the doc­u­ment.
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	%allcolors=blue  %set all colors options (without border and field options)
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor= uasblue, %NavyBlue, %black,  %choose some color if you want internal links to stand out 
+	citecolor= blue, % blue,   %color for bibliographical citations in text.
+	urlcolor=uasblue,%NavyBlue,     %color for URL links         
+	%--------------------------------------
+	%Configuración del PDF resultante
+	%--------------------------------------
+	pdfauthor ={\pdfauthor}, %, \pdfsupervisor}, 
+	pdftitle ={\pdftitle\ - Tarea \myhandoutnumber},
+	pdfsubject ={\pdfsubject} ,
+	pdfkeywords ={\mycourse,\mysubject,\myuniversity},
+	%pdfstartview ={ FitV } ,
+	%pdfview ={ FitH } ,
+	pdfpagemode ={ FullScreen },
+	backref ={ true },
+	bookmarks={true},
+	%pdfpagelabels,
+	bookmarksnumbered=true
+}
+
+
+%--------------------------------------
+%enumerate environment setup (taken from pandoc)
+%--------------------------------------
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{3pt}\setlength{\parskip}{10pt}}
+%\providecommand{\tightlist}{%
+	%	\setlength{\itemsep}{6pt}\setlength{\parskip}{6pt}}
+
+%--------------------------------------
+%defautl bullets for itemize environment
+%--------------------------------------
+\renewcommand{\labelitemi}{\textcolor{darkgray}{$\bullet$}}%{$\cdotp$}%{$\cdot$}
+\renewcommand{\labelitemii}{$-$}
+%\renewcommand{\labelitemiii}{$\circ$}
+%\renewcommand{\labelitemiv}{$\circ$}
+
+
+\begin{document}
+
+
+\handout{\myhandoutnumber}{\mytitledoc}{\mydate}
+\setlength{\parindent}{0pt}
+
+\newcommand{\solution}{
+  \medskip
+  {\bf Solution:}
+}
+
+%TODO Change content and questions
+Fecha de entrega: antes de iniciar el examen parcial, {\bf viernes 8 de Marzo de 2019} a las {\bf 15:00 hrs}. Por correo electrónico.
+
+\medskip
+
+\hrulefill
+
+
+\begin{enumerate}
+
+\item Defina con sus propias palabras:
+\begin{enumerate}
+\item Inteligencia.
+\item Inteligencia Artificial.
+\end{enumerate}
+
+\item Lea el artículo original de Turing sobre lA (Turing, 1950). En él se comentan algunas objeciones potenciales a su propuesta y a su prueba de inteligencia. ¿Cuáles de estas objeciones tiene todavía validez? ¿Son válidas sus refutaciones? ¿Se le ocurren nuevas objeciones a esta propuesta teniendo en cuenta los desarrollos realizados desde que se escribió el artículo? En el artículo, Turing predijo que para el año 2000 sería probable que un computador tuviera un 30 por ciento de posibilidades de superar una Prueba de Turing dirigida por un evaluador inexperto con una duración de cinco minutos. ¿Considera razonable lo anterior en el mundo actual? ¿Y en los próximos 50 años?.
+
+\item Todos los años se otorga el premio Loebner al programa que lo hace mejor en una Prueba de Turing concreta. Investigue y haga un informe sobre el último ganador del premio Loebner. ¿Qué técnica utiliza? ¿Cómo ha hecho que progrese la investigación en el campo de la lA?
+
+\item Hay clases de problemas bien conocidos que son intratables para los computadores, y otras clases sobre los cuales un computador no pueda tomar una decisión. ¿Quiere esto decir que es imposible lograr la IA?
+
+\item ¿Cómo puede la introspección (revisión de los pensamientos íntimos) ser inexacta? ¿Se puede estar equivocado sobre lo que se cree? Discútase.
+
+\item Consulte en la literatura existente sobre la lA si alguna de las siguientes tareas se puede efectuar con computadoras:
+\begin{enumerate}
+\item Jugar una partida de tenis de mesa (ping-pong) decentemente.
+\item Conducir un coche en el centro de una Ciudad.
+\item Comprar comestibles para una semana en el mercado.
+\item Comprar comestibles para una semana en la web.
+\item Jugar una partida de bridge decentemente a nivel de competición
+\item Descubrir y demostrar nuevos teoremas matemáticos.
+\item Escribir intencionadamente una historia divertida.
+\item Ofrecer asesoría legal competente en un área determinada.
+\item Traducir inglés hablado en tiempo real.
+\item Realizar una operación de cirugía compleja.
+\end{enumerate}
+
+
+\item Algunos autores afirman que la percepción y las habilidades motoras son la parte más importante de la inteligencia y que las capacidades de «alto nivel» son más bien parásitas (simples añadidos a las capacidades básicas). Es un hecho que la mayor parte de la evolución y que la mayor parte del cerebro se han concentrado en la percepción y las habilidades motoras, en tanto la IA ha descubierto que tareas como juegos e inferencia lógica resultan más sencillas, en muchos sentidos, que percibir y actuar en el mundo real. ¿Consideraría usted que ha sido un error la concentración tradicional de la IA en las capacidades cognitivas de alto nivel?
+
+\item ¿Por qué la evolución tiende a generar sistemas que actúan racionalmente? ¿Qué objetivos deben intentar alcanzar estos sistemas?
+
+\item ¿Son racionales las acciones reflejas (como retirar la mano de una estufa caliente)? ¿Son inteligentes?
+
+\item «En realidad las computadoras no son inteligentes, hacen solamente lo que le dicen los programadores». ¿Es cierta la última aseveración, e implica a la primera?
+
+\item «En realidad los animales no son inteligentes, hacen solamente lo que le dicen sus genes». ¿Es cierta la última aseveración, e implica a la primera?
+
+\item «En realidad los animales no son inteligentes, hacen solamente lo que le dicen sus genes». ¿Es cierta la última aseveración, e implica a la primera?
+
+\item «En realidad los animales, los humanos y los computadores no pueden ser inteligentes, ellos sólo hacen lo que los átomos que los forman les dictan siguiendo las leyes de la física». ¿Es cierta la última aseveración, e implica a la primera?
+
+
+\end{enumerate}
+
+%--------------------------------------
+% Insert bibliography
+%--------------------------------------
+%change References heading
+%\renewcommand{\bibname}{whatever} %used for book document class
+\renewcommand{\refname}{Bibliografía} %used for article document class
+%\addto\captionsspanish{\renewcommand{\refname}{loquesea2}}
+%\addto\captionsspanish{\renewcommand{\bibname}{loquesea1}}
+
+
+\nocite{russell2004inteligencia} %makes one cite entrie.
+\nocite{*} %NOTE: only works if you cite almost one key before.
+%Define style and insert bibliography
+\bibliographystyle{plainnat} %sets style you can use: ieeetr acmtrans apalike 
+\bibliography{booksIA} %booksIA.bib is the file containing the bibliography entries.
+
+%----------------------------------------------------------------
+
+
+\end{document}

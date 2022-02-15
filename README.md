@@ -11,6 +11,9 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 
 ## Listado de plantillas
 
+
+
+
 ### plantilla01-tarea-preguntas
 
 Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque para consejos o información adicional y bibliografía.
@@ -20,6 +23,8 @@ Esta plantilla tiene encabezado, sección de instrucciones, preguntas, bloque pa
 
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla01-tarea-preguntas/screenshots/tarea06-2-small.png)](plantilla01-tarea-preguntas)
 
+
+*Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
 
 
@@ -32,6 +37,9 @@ Contiene los mismo que la plantilla anterior, agrega bloques para mostrar códig
 [![página01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-1-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla02-tarea-preguntas-codigo)
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla02-tarea-preguntas-codigo)
 [![página03](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla02-tarea-preguntas-codigo/screenshots/tarea06-3-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla02-tarea-preguntas-codigo)
+
+
+*Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
 
 ### plantilla03-template03-tarea-preguntas-codigo-varios-estilos-colores
@@ -54,6 +62,16 @@ A continuación se muestra la página 2 aplicando cada uno de los estilos.
 [![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla03-tarea-preguntas-codigo-estilos-colores/screenshots/vs2017/tarea06-vs2017-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla03-tarea-preguntas-codigo-estilos-colores)
 
 
+*Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
+
+
+### plantilla-tarea-básica
+
+[![página01](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla04-tarea-basica/screenshots/vs2017/cuestionario01-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla04-tarea-basica)
+
+[![página02](https://raw.githubusercontent.com/rogelioprieto/latex-templates-UAS/master/plantilla04-tarea-basica/screenshots/vs2017/cuestionario01-2-small.png)](https://github.com/rogelioprieto/latex-templates-UAS/tree/master/plantilla04-tarea-basica)
+
+*Créditos:* esta plantilla se basó en una plantilla de tareas de la web: <https://ocw.mit.edu/about>.  Al interior de la plantilla encontrará la referencia.
 
 
 ## Licencia 

@@ -17,6 +17,19 @@ Here, You will find templates de LaTeX that I have used in my work as teacher at
 - [03-tarea-preguntas-codigo-varios-estilos-colores](#plantilla03-tarea-preguntas-codigo-varios-estilos-colores)
 - [04-tarea-básica](#plantilla04-tarea-básica)
 
+### Paquetes requeridos de LaTeX
+Las plantillas 01-03 utilizan estos paquetes que requieren ser instalados:
+
+- [awesomebox](https://ctan.org/pkg/awesomebox)
+- [fontawesome5](https://ctan.org/pkg/fontawesome5)
+- [wrapfig](https://ctan.org/pkg/wrapfig)
+
+If you use Ubuntu, you can use this commands:
+```
+tlmgr --verify-repo=none install awesomebox
+tlmgr --verify-repo=none install fontawesome5
+tlmgr --verify-repo=none install wrapfig
+```
 
 
 ### plantilla01-tarea-preguntas
